@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(40, 44, 49)
+}
+
+nav{
+    margin-top: 20px;
+}
+
+
+.navbar-brand{
+    margin-right: 100px;
+}
+
+.carousel-item {
+    height: 35rem;
+}
+
+.carousel-item > img {
+    object-fit: cover;
+    height: 35rem;
+}
