@@ -1,10 +1,15 @@
+@font-face {
+	font-family: font1;
+	src: url(../fonts/font1.ttf);
+}
+
 body{
     background-color: rgb(40, 44, 49)
 }
 
 nav{
-    width: 60%;
-    margin: auto;
+    width: 90%;
+    margin: 20px auto;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 16pt;
 }
@@ -20,4 +25,32 @@ nav{
 .carousel-item > img {
     object-fit: cover;
     height: 32rem;
+}
+
+.background{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-indicators{
+    margin-bottom: 23px;
+}
+
+h1.titre{
+    font-family: font1;
+    font-size: 200pt;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+}
+
+h3.titre{
+    font-family: font1;
+    font-size: 80pt;
+    letter-spacing: 4px;
+}
+
+
+@media screen and (max-width: 830px) {
+    .titre{
+        display: none;
+    }
 }
