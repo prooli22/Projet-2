@@ -84,3 +84,8 @@ h3.titre{
         margin-top: -157px;
     }
 }
+
+#formReservation{
+    display:block;
+    color:white;
+}
