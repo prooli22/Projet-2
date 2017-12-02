@@ -9,7 +9,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 <!-- Information pour la page XHTML -->
-
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Olivier Provost et Benoit Paul" />
@@ -28,25 +27,25 @@
 
 <body>
     <!-- Contenu du menu -->
-    <header class="fixed-top">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="410" id="logo">
-            <path id="bouteille" d="M100,100 H300 V400 H100 Q200 250, 100 100" style="fill:url(#biere);" />
-            <path d="M75,400 C190,253 70,20 19,126 " />
-            <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
-            <path class="poignee" d="M300 150 Q400 250, 300 350" />
-            <path class="poignee" d="M300 125 Q440 250, 300 375" />
-            <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"
-            />
-            <defs>
-                <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
-                    <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
-                    <stop offset="100%" stop-color="#b34700" stop-opacity="1" />
-                </linearGradient>
-            </defs>
-        </svg>
-        <nav class="navbar navbar-expand-md navbar-dark rounded mb-3">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark rounded mb-3 fixed-top">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="410" id="logo">
+                <path id="bouteille" d="M100,100 H300 V400 H100 Q200 250, 100 100" style="fill:url(#biere);" />
+                <path d="M75,400 C190,253 70,20 19,126 " />
+                <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
+                <path class="poignee" d="M300 150 Q400 250, 300 350" />
+                <path class="poignee" d="M300 125 Q440 250, 300 375" />
+                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"
+                />
+                <defs>
+                    <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
+                        <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#b34700" stop-opacity="1" />
+                    </linearGradient>
+                </defs>
+            </svg>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
+            aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -65,13 +64,12 @@
                 </ul>
             </div>
         </nav>
-        <img class="backgroundImg fixed-top" src="./images/bar7.jpeg" alt="Arrière-plan" />
+        <img class="backgroundImg" src="./images/bar7.jpeg" alt="Arrière-plan" />
         <h1 class="titre">Réservation</h1>
     </header>
 
     <!-- Contenu principal de la page -->
     <main class="text-light">
-
         <form id="formReservation" class="bg-light" action=" http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi">
             <p id="titreRes">Prêt pour la soirée de votre vie? Que ce soit pour une fête d'amis, un party de bureau ou seulement pour passer
                 du bon temps, c'est ici que tout commence! Réservez dès maintenant grâce à notre formulaire en ligne.
@@ -96,6 +94,7 @@
                     <input type="tel" class="form-control" id="inputTel4" placeholder="telephone" />
                 </div>
             </div>
+<<<<<<< Updated upstream
 
             <label for="inputNbPersonnes">Nombre de personnes</label>
             <input type="number" class="form-control" id="inputNbPersonnes" placeholder="" />
@@ -106,6 +105,12 @@
             <label for="commentaires">Commentaires</label>
             <textarea id="commentaires" type="text" class="form-control" placeholder="Commentaires/demandes spéciales"></textarea>
 
+=======
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+            </div>
+>>>>>>> Stashed changes
         </form>
     </main>
     <!-- Contenu du bas de page -->
