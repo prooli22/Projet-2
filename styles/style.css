@@ -68,6 +68,10 @@ h3.titre{
     letter-spacing: 4px;
 }
 
+main{
+    margin-top: 32rem;
+}
+
 
 @media screen and (max-width: 830px) {
     h1.titre, svg{
@@ -86,6 +90,5 @@ h3.titre{
 }
 
 #formReservation{
-    display:block;
     color:white;
 }
