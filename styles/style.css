@@ -55,8 +55,6 @@ nav{
     height: 32rem;
     z-index: -10;
     width: 100%;
-    margin-top: -100px;
-    float:both;
 }
 
 h1.titre{
@@ -66,7 +64,7 @@ h1.titre{
     margin-bottom: 80px;
     text-align:center;
     color: white;
-    float:both;
+    margin-top: -400px;
 }
 
 h3.titre{
@@ -92,9 +90,10 @@ h3.titre{
     }
 }
 
-#formReservation{
+main{
     background-image:url(../images/resBack.jpg);
-    background-size: repeat;
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
 #titreRes{
