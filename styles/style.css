@@ -90,5 +90,11 @@ main{
 }
 
 #formReservation{
-    color:white;
+    background-image:url(../images/resBack.jpg);
+    background-size: contain;
+}
+
+#titreRes{
+    margin:0 20%;
+    font-size:1.5em;
 }
