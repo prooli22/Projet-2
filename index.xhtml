@@ -25,6 +25,7 @@
 </head>
 
 <!-- Contenu de la page XHTML -->
+
 <body>
     <!-- Contenu du menu -->
     <header>
@@ -35,7 +36,8 @@
                 <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
                 <path class="poignee" d="M300 150 Q400 250, 300 350" />
                 <path class="poignee" d="M300 125 Q440 250, 300 375" />
-                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"/>
+                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"
+                />
                 <defs>
                     <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
                         <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
@@ -50,7 +52,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav text-md-center nav-justified w-100">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.xhtml">Accueil<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.xhtml">Accueil
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./menu.xhtml">Menu</a>
@@ -87,15 +91,20 @@
                     <div class="carousel-caption d-none d-block rounded background">
                         <h3 class="titre">Réservation</h3>
                         <p>Vous pouvez faire une réservation directement sur notre site.</p>
-                        <p><a class="btn btn-lg btn-light" href="./reservation.xhtml" role="button">Réserver</a></p>
+                        <p>
+                            <a class="btn btn-lg btn-light" href="./reservation.xhtml" role="button">Réserver</a>
+                        </p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./images/bar6.jpeg" alt="Third slide" />
                     <div class="carousel-caption d-none d-block rounded background">
                         <h3 class="titre">Promotion</h3>
-                        <p>Avez-vous entendu parler de notre promotion sur la 2<sup>e</sup> bouteille ?</p>
-                        <p><a class="btn btn-lg btn-light" href="#" role="button">En apprendre plus</a></p>
+                        <p>Avez-vous entendu parler de notre promotion sur la 2
+                            <sup>e</sup> bouteille ?</p>
+                        <p>
+                            <a class="btn btn-lg btn-light" href="#" role="button">En apprendre plus</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -112,12 +121,33 @@
 
     <!-- Contenu principal de la page -->
     <main>
-        
+
     </main>
 
     <!-- Contenu du bas de page -->
-    <footer>
-
+    <footer class="text-light rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Heures d'ouverture<br />Tous les jours<br />De 14h à 3h00</p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        2 Rue de la Boisson
+                        <br /> Montréal, Qc
+                        <br />
+                        514 734 2222 |
+                        <a class="text-secondary" target="_blank" href="mailto:info@2eboisson.ca">info@2eboisson.ca</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Pour en apprendre plus sur les auteurs du site. Suivez le lien :
+                        <a class="btn btn-sm btn-light" href="./auteurs.xhtml" role="button">Auteurs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->

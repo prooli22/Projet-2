@@ -73,6 +73,24 @@ h3.titre{
     letter-spacing: 4px;
 }
 
+body{
+    background-image:url(../images/resBack.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+#titreRes{
+    margin:0 20%;
+    font-size:1.5em;
+}
+
+footer{
+    padding: 20px 0;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 
 @media screen and (max-width: 830px) {
     h1.titre, svg{
@@ -88,15 +106,4 @@ h3.titre{
         margin: 0;
         margin-right: -150px;
     }
-}
-
-main{
-    background-image:url(../images/resBack.jpg);
-    background-size: cover;
-    background-repeat: repeat-y;
-}
-
-#titreRes{
-    margin:0 20%;
-    font-size:1.5em;
 }
