@@ -84,6 +84,21 @@ body{
     font-size:1.5em;
 }
 
+main{
+    width: 90%;
+    margin: 20px auto;
+    
+}
+
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+hr{
+    background-color: white;
+}
+
 footer{
     padding: 20px 0;
     width: 90%;
