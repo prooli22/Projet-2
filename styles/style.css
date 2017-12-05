@@ -57,10 +57,13 @@ nav{
     width: 100%;
 }
 
-h1.titre{
+.titre{
     font-family: font1;
-    font-size: 200pt;
     letter-spacing: 4px;
+}
+
+h1.titre{
+    font-size: 200pt;
     margin-bottom: 80px;
     text-align:center;
     color: white;
@@ -68,9 +71,7 @@ h1.titre{
 }
 
 h3.titre{
-    font-family: font1;
     font-size: 80pt;
-    letter-spacing: 4px;
 }
 
 body{
@@ -87,7 +88,6 @@ body{
 main{
     width: 90%;
     margin: 20px auto;
-    
 }
 
 .jumbotron{
@@ -97,6 +97,30 @@ main{
 
 hr{
     background-color: white;
+}
+
+#imgPromo{
+    height: 15rem;
+    object-fit: cover;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #868e96;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: black;
+    background-color: white;
+}
+
+.tab-content{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    padding: 0 20px;
 }
 
 footer{

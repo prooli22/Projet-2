@@ -8,6 +8,7 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
 <!-- Information pour la page XHTML -->
 <head>
     <meta charset="UTF-8" />
@@ -15,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <title>2e Boisson | Accueil</title>
+    <link rel="shortcut icon" href="./images/logo.ico" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -81,14 +83,14 @@
                     <img class="d-block w-100" src="./images/bar5.jpeg" alt="First slide" />
                     <div class="carousel-caption d-none d-block rounded background">
                         <h3 class="titre">Bienvenue</h3>
-                        <p>Êtes-vous prêt pour la soirée la plus palpitante de votre vie ? Planifiez-là directement sur notresite.</p>
+                        <p>Êtes-vous prêt pour la soirée la plus palpitante de votre vie ? Planifiez-là directement sur notre site.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./images/bar4.jpeg" alt="Second slide" />
                     <div class="carousel-caption d-none d-block rounded background">
                         <h3 class="titre">Réservation</h3>
-                        <p>Vous pouvez faire une réservation directement sur notre site.</p>
+                        <p>Vous pouvez faire une réservation en cliquant sur le lien suivant.</p>
                         <p>
                             <a class="btn btn-lg btn-light" href="./reservation.xhtml" role="button">Réserver</a>
                         </p>
@@ -98,10 +100,9 @@
                     <img class="d-block w-100" src="./images/bar6.jpeg" alt="Third slide" />
                     <div class="carousel-caption d-none d-block rounded background">
                         <h3 class="titre">Promotion</h3>
-                        <p>Avez-vous entendu parler de notre promotion sur la 2
-                            <sup>e</sup> bouteille ?</p>
+                        <p>Avez-vous entendu parler de notre promotion sur la 2<sup>e</sup> bouteille ?</p>
                         <p>
-                            <a class="btn btn-lg btn-light" href="#" role="button">En apprendre plus</a>
+                            <a class="btn btn-lg btn-light" href="#promotion" role="button">En apprendre plus</a>
                         </p>
                     </div>
                 </div>
@@ -120,7 +121,7 @@
     <!-- Contenu principal de la page -->
     <main class="text-light">
         <div class="jumbotron">
-            <h1 class="display-3">Évènements à venir</h1>
+            <h1 class="display-3">Soirées à venir</h1>
             <p class="lead">
                 Nous avons plusieurs évènements qui attirent une clientèle de feu ! Restez à l'affût de ce qui se passera
                 prochainement chez nous.
@@ -128,15 +129,15 @@
             <hr class="my-4" />
             <div class="card-group justify-content-center text-dark">
                 <div class="card border-light">
-                    <img class="card-img-top" src="./images/bar2.jpeg" alt="Card image cap" />
+                    <img class="card-img-top" src="./images/karaoke.jpeg" alt="Card image cap" />
                     <div class="card-body">
                         <h4 class="card-title">Karaoké</h4>
-                        <p class="card-text">Tous les mardis, vient montrer tes talents de chanteurs lors de nos soirées karaoké !</p>
+                        <p class="card-text">Tous les mardis, vient montrer tes talents de chanteur lors de nos soirées karaoké !</p>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="card border-light">
-                    <img class="card-img-top" src="./images/bar2.jpeg" alt="Card image cap" />
+                    <img class="card-img-top" src="./images/guitar.jpeg" alt="Card image cap" />
                     <div class="card-body">
                         <h4 class="card-title">Boîte à Chansons</h4>
                         <p class="card-text">Tous les vendredis, nous recevons un artiste de la métropole qui nous donne un spectacle exceptionnel.</p>
@@ -144,7 +145,7 @@
                 </div>
                 <div class="col-md-1"></div>
                 <div class="card border-light">
-                    <img class="card-img-top" src="./images/bar2.jpeg" alt="Card image cap" />
+                    <img class="card-img-top" src="./images/gilles.jpeg" alt="Card image cap" />
                     <div class="card-body">
                         <h4 class="card-title">Les vieux de la vieille</h4>
                         <p class="card-text">Tous les samedis, on rend hommage aux artistes québécois qui ont marqué la musique de notre province.</p>
@@ -154,16 +155,17 @@
         </div>
 
         <div class="jumbotron">
-            <h1 class="display-3">Promotion</h1>
+            <h1 class="display-3" id="promotion">Promotion</h1>
             <p class="lead">Nous avons une super promotion sur la 2<sup>e</sup> bouteille !</p>
             <hr class="my-4"/>
-            <p>À l'achat d'une première bouteille (bière, vin ou fort) on vous offre la deuxième bouteille gratuitement
-                si vous acceptez et relevez notre défi. En quoi consiste ce défi ? C'est bien simple, vous et votre groupe
-                ne devez pas toucher à votre téléphone durant TOUTE la soirée, sinon vous devrez payer la deuxième bouteille.
-            </p>
-            <p class="lead">
-                <a class="btn btn-light btn-lg" href="#" role="button">Learn more</a>
-            </p>
+            <div class="row">
+                <div class="col-md-6 rounded">
+                    À l'achat d'une première bouteille (bière, vin ou fort) on vous offre la deuxième bouteille gratuitement
+                    si vous acceptez et relevez notre défi. En quoi consiste ce défi ? C'est bien simple, vous et votre groupe
+                    ne devez pas toucher à votre téléphone durant TOUTE la soirée, sinon vous devrez payer la deuxième bouteille.      
+                </div>
+                <img id="imgPromo" class="col-md-6" src="./images/bar2.jpeg" alt="" />
+            </div>
         </div>
 
 
@@ -205,6 +207,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
+    <script>
+            $(window).scroll(function () {$("nav").css({'opacity' : 1-(($(this).scrollTop())/350)});});
+    </script>
 </body>
 
 </html>
