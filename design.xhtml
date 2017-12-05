@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Projet 2
+    Auteur : Olivier Provost & Benoit Paul
+    Page : Design
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<!-- Information pour la page XHTML -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Olivier Provost et Benoit Paul" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>2e Boisson | Design</title>
+    <link rel="shortcut icon" href="./images/logo.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+</head>
+
+<!-- Contenu de la page XHTML -->
+<body>
+
+    <!-- Contenu du menu -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark rounded mb-3 fixed-top">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="410">
+                <path id="bouteille" d="M100,100 H300 V400 H100 Q200 250, 100 100" style="fill:url(#biere);" />
+                <path d="M75,400 C190,253 70,20 19,126 " />
+                <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
+                <path class="poignee" d="M300 150 Q400 250, 300 350" />
+                <path class="poignee" d="M300 125 Q440 250, 300 375" />
+                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100" />
+                <defs>
+                    <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
+                        <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#b34700" stop-opacity="1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav text-md-center nav-justified w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.xhtml">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.xhtml">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reservation.xhtml">Réservation</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main class="text-light">
+        
+    </main>
+
+    <!-- Contenu du bas de page -->
+    <footer class="text-light rounded">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        Heures d'ouverture
+                        <br />Tous les jours
+                        <br />De 14h à 3h00
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        2 Rue de la Boisson
+                        <br /> Montréal, Qc
+                        <br /> 514 734 2222 |
+                        <a class="text-secondary" target="_blank" href="mailto:info@2eboisson.ca">info@2eboisson.ca</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Pour en apprendre plus sur les auteurs du site. Suivez le lien :
+                        <a class="btn btn-sm btn-light" href="./auteurs.xhtml" role="button">Auteurs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+
+    <script>
+            $(window).scroll(function () {$("nav").css({'opacity' : 1-(($(this).scrollTop())/350)});});
+    </script>
+</body>
+
+</html>
