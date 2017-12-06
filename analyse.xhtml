@@ -10,6 +10,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 
 <!-- Information pour la page XHTML -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Olivier Provost et Benoit Paul" />
@@ -26,6 +27,7 @@
 </head>
 
 <!-- Contenu de la page XHTML -->
+
 <body>
     <!-- Contenu du menu -->
     <header>
@@ -36,7 +38,8 @@
                 <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
                 <path class="poignee" d="M300 150 Q400 250, 300 350" />
                 <path class="poignee" d="M300 125 Q440 250, 300 375" />
-                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100" />
+                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"
+                />
                 <defs>
                     <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
                         <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
@@ -91,33 +94,35 @@
             <li>Trop d’information sur une page, la structure n’est plus claire</li>
             <li>Pas d’arrière-plan</li>
         </ol>
+        <br></br>
         <a href="http://www.sainthoublon.com/StDenis/">http://www.sainthoublon.com/StDenis/</a>
         <h2>Forces</h2>
-            <ol>
-                <li>Accueil dynamique grâce au carrousel</li>
-                <li>Accès facile au menu et la réservation</li>
-            </ol>
-            <h3>Faiblesses</h3>
-            <ol>
-                <li>On ne peut se déplacer sur la page que par bloc, c’est tannant</li>
-                <li>Le reste du site sous le carrousel transmet une ambiance trop sombre, l’arrière-plan devrait être moins lugubre</li>
-            </ol>
-            <a href="http://pubmccarold.com/">http://pubmccarold.com/</a>
-            <h3>Forces</h3>
-            <ol>
-                <li>Accès facile au menu/nouveautés</li>
-                <li>Présence de nombreux témoignages à l’honneur du pub</li>
-            </ol>
-            <h3>Faiblesses</h3>
-            <ol>
-                <li>Pas assez d’emphase sur les promotions</li>
-                <li>Design trop simpliste, manque de diversité</li>
-            </ol>
-            <h2>Thème</h2>
-            <p>Notre site se veut une représentation de la génération des jeunes adultes. C’est pourquoi on veut un design moderne
-                et vivant, ainsi que des promotions qui visent cette tranche d’âge. On veut également que notre site rappelle
-                notamment de par ses couleurs plus sombres la vie de nuit, puisque que c’est là que se déroulera la majorité
-                des activités du bar.</p>
+        <ol>
+            <li>Accueil dynamique grâce au carrousel</li>
+            <li>Accès facile au menu et la réservation</li>
+        </ol>
+        <h3>Faiblesses</h3>
+        <ol>
+            <li>On ne peut se déplacer sur la page que par bloc, c’est tannant</li>
+            <li>Le reste du site sous le carrousel transmet une ambiance trop sombre, l’arrière-plan devrait être moins lugubre</li>
+        </ol>
+        <br></br>
+        <a href="http://pubmccarold.com/">http://pubmccarold.com/</a>
+        <h3>Forces</h3>
+        <ol>
+            <li>Accès facile au menu/nouveautés</li>
+            <li>Présence de nombreux témoignages à l’honneur du pub</li>
+        </ol>
+        <h3>Faiblesses</h3>
+        <ol>
+            <li>Pas assez d’emphase sur les promotions</li>
+            <li>Design trop simpliste, manque de diversité</li>
+        </ol>
+        <h2>Thème</h2>
+        <p>Notre site se veut une représentation de la génération des jeunes adultes. C’est pourquoi on veut un design moderne
+            et vivant, ainsi que des promotions qui visent cette tranche d’âge. On veut également que notre site rappelle
+            notamment de par ses couleurs plus sombres la vie de nuit, puisque que c’est là que se déroulera la majorité
+            des activités du bar.</p>
     </main>
     <!-- Contenu du bas de page -->
     <footer class="text-light rounded">
@@ -147,17 +152,17 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
     <script>
-            $(window).scroll(function () {$("nav").css({'opacity' : 1-(($(this).scrollTop())/350)});});
+        $(window).scroll(function () { $("nav").css({ 'opacity': 1 - (($(this).scrollTop()) / 350) }); });
     </script>
 </body>
 
