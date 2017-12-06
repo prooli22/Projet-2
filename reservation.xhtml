@@ -10,6 +10,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 
 <!-- Information pour la page XHTML -->
+
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Olivier Provost et Benoit Paul" />
@@ -26,6 +27,7 @@
 </head>
 
 <!-- Contenu de la page XHTML -->
+
 <body>
 
     <!-- Contenu du menu -->
@@ -37,7 +39,8 @@
                 <path d="M100,400 H75 C-30 385, 35 200, 150 400" />
                 <path class="poignee" d="M300 150 Q400 250, 300 350" />
                 <path class="poignee" d="M300 125 Q440 250, 300 375" />
-                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100" />
+                <path class="mousse" d="M100 100, A1,1 0 0,1 140,60 A1,1 0 0,1 200,30 A1,1 0 0,1 250 30 A1,1 0 0,1 290 60 A1,1 0 0,1 300 100"
+                />
                 <defs>
                     <linearGradient id="biere" x1="0%" y1="0%" x2="0" y2="100%" spreadMethod="pad">
                         <stop offset="0%" stop-color="rgb(255, 153, 0)" stop-opacity="1" />
@@ -71,7 +74,7 @@
 
     <!-- Contenu principal de la page -->
     <main class="text-light">
-        <form id="formReservation" action=" http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi">
+        <form id="formReservation" action=" http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post">
             <p id="titreRes">Prêt pour la soirée de votre vie? Que ce soit pour une fête d'amis, un party de bureau ou seulement pour passer
                 du bon temps, c'est ici que tout commence! Réservez dès maintenant grâce à notre formulaire en ligne.
             </p>
@@ -95,22 +98,29 @@
                     <input type="tel" class="form-control" id="inputTel4" placeholder="514-709-8888" />
                 </div>
             </div>
-            <label for="inputNbPersonnes">Nombre de personnes</label>
-            <input type="number" class="form-control" id="inputNbPersonnes" placeholder="" />
-
-            <label for="date">Date</label>
-            <input id="date" type="date" class="form-control" placeholder="2017-12-25" />
-
+            <div class="row">
+                <div class="col">
+                    <label for="inputNbPersonnes">Nombre de personnes</label>
+                    <input type="number" class="form-control" id="inputNbPersonnes" placeholder="" />
+                </div>
+                <div class="col">
+                    <label for="date">Date</label>
+                    <input id="date" type="date" class="form-control" placeholder="2017-12-25" />
+                </div>
+            </div>
             <label for="commentaires">Commentaires</label>
             <textarea id="commentaires" type="text" class="form-control" placeholder="Commentaires/demandes spéciales"></textarea>
+            <br/>
+            <input type="submit" name="envoyer" value="Envoyer"/>
         </form>
         <div id="reservationInfo">
             <h2>Nos meilleures tables à votre portée</h2>
             <p>
                 Soyez aux premières loges pour les spectacles de nos artistes invités en demandant les tables près de la scène.
             </p>
-            <img id="artistes" src="./images/artistes.jpeg" alt="artistes"/>
+            <img id="artistes" src="./images/artistes.jpeg" alt="artistes" />
         </div>
+        
     </main>
 
     <!-- Contenu du bas de page -->
@@ -151,7 +161,7 @@
         crossorigin="anonymous"></script>
 
     <script>
-            $(window).scroll(function () {$("nav").css({'opacity' : 1-(($(this).scrollTop())/350)});});
+        $(window).scroll(function () { $("nav").css({ 'opacity': 1 - (($(this).scrollTop()) / 350) }); });
     </script>
 </body>
 
