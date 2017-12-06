@@ -117,11 +117,16 @@ hr{
     background-color: white;
 }
 
+table td:not(:first-child), table th:not(:first-child){
+    text-align: right;
+}
+
 .tab-content{
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 10px;
     padding: 0 20px;
 }
+
 
 footer{
     padding: 20px 0;
