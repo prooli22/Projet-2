@@ -132,22 +132,10 @@ table td:not(:first-child), table th:not(:first-child){
 }
 
 #formReservation{
-    display:inline-block;
-    width:46%;
-    margin:2%;
     border:2px solid black;
     padding:10px;
-    background-image:url("../images/reservation.jpeg");
-    background-size:cover;
-    vertical-align:top;
 }
 
-#reservationInfo{
-    display:inline-block;
-    padding:none;
-    width:40%;
-    vertical-align:top;
-}
 
 #artistes{
     display:block;
