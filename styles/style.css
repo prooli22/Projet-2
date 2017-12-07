@@ -74,6 +74,10 @@ h3.titre{
     font-size: 80pt;
 }
 
+h4.titre{
+    font-size: 45pt;
+}
+
 body{
     background-image:url(../images/resBack.jpg);
     background-size: cover;
@@ -127,14 +131,6 @@ table td:not(:first-child), table th:not(:first-child){
     padding: 0 20px;
 }
 
-
-footer{
-    padding: 20px 0;
-    width: 90%;
-    margin: 20px auto;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
 #formReservation{
     display:inline-block;
     width:46%;
@@ -160,10 +156,30 @@ footer{
     width:70%;
 }
 
+.couleur{
+    margin: 10px 5px;
+    height: 55px;
+    width: 55px;
+}
+
+footer{
+    padding: 20px 0;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 
 @media screen and (max-width: 830px) {
     h1.titre, svg{
         display: none;
+    }
+    
+    h3.titre.d-none{
+        display:block!important;
+        margin-top: -300px;
+        color: white;
+        text-align: center;
     }
 }
 
