@@ -10,7 +10,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
 
 <!-- Information pour la page XHTML -->
-
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Olivier Provost et Benoit Paul" />
@@ -27,7 +26,6 @@
 </head>
 
 <!-- Contenu de la page XHTML -->
-
 <body>
 
     <!-- Contenu du menu -->
@@ -68,7 +66,7 @@
                 </ul>
             </div>
         </nav>
-        <img class="backgroundImg" src="./images/bar7.jpeg" alt="Arrière-plan" />
+        <img class="backgroundImg" src="./images/reservation.jpeg" alt="Arrière-plan" />
         <h1 class="titre">Réservation</h1>
         <h3 class="titre d-none">Réservation</h3>
     </header>
@@ -76,45 +74,46 @@
     <!-- Contenu principal de la page -->
     <main class="text-light container">
         <div class="row">
-            <form id="formReservation" action=" http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post"
-                class="col-12 col-lg-6 jumbotron">
-                <p id="titreRes">Prêt pour la soirée de votre vie? Que ce soit pour une fête d'amis, un party de bureau ou seulement pour
+            <form id="formReservation" action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post"
+                class="col-md-6 background rounded" target="_blank">
+                <p class="lead">Prêt pour la soirée de votre vie? Que ce soit pour une fête d'amis, un party de bureau ou seulement pour
                     passer du bon temps, c'est ici que tout commence! Réservez dès maintenant grâce à notre formulaire en
                     ligne.
                 </p>
                 <div class="row">
-                    <div class="col-md-6">
-                        <label for="inputPrenom">Prenom</label>
-                        <input id="inputPrenom" type="text" class="form-control" name="Prenom" />
+                    <div class="form-group col-md-6">
+                        <label for="inputPrenom">Prénom *</label>
+                        <input id="inputPrenom" type="text" class="form-control" name="prenom" maxlength="40" required="true" />
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputNom">Nom</label>
-                        <input id="inputNom" type="text" class="form-control" name="Nom" />
+                    <div class="form-group col-md-6">
+                        <label for="inputNom">Nom *</label>
+                        <input id="inputNom" type="text" class="form-control" name="nom" maxlength="40" required="true"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" name="Email" />
+                        <label for="inputEmail4">Courriel *</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="courriel" maxlength="60" required="true"/>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputTel4">Téléphone</label>
-                        <input type="tel" class="form-control" id="inputTel4" placeholder="514-709-8888" name="Telephone" />
+                        <label for="inputTel4">Téléphone *</label>
+                        <input type="tel" class="form-control" id="inputTel4" placeholder="514-709-8888" name="telephone" required="true" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <label for="inputNbPersonnes">Nombre de personnes</label>
-                        <input type="number" class="form-control" id="inputNbPersonnes" name="NombrePersonnes" />
+                    <div class="form-group col-md-5">
+                        <label for="inputNbPersonnes">Nombre de personnes *</label>
+                        <input type="number" class="form-control" id="inputNbPersonnes" min="2" name="nbPersonnes" required="true" />
                     </div>
-                    <div class="col-md-6">
-                        <label for="date">Date</label>
-                        <input id="date" type="date" class="form-control" placeholder="2017-12-25" name="Date" />
+                    <div class="form-group col-md-7">
+                        <label for="date">Date *</label>
+                        <input id="date" type="date" class="form-control"  name="date" required="true" />
                     </div>
                 </div>
                 <label for="commentaires">Commentaires</label>
                 <textarea id="commentaires" type="text" class="form-control" placeholder="Commentaires/demandes spéciales" name="commentaires"></textarea>
                 <br/>
+                <p>* : Ces champs sont obligatoires</p>
                 <input type="submit" name="envoyer" value="Envoyer" />
             </form>
             <div id="reservationInfo" class="col-12 col-lg-6">
