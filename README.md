@@ -1,5 +1,16 @@
 # Projet-2
-Projet 2 - Développement et Design Web IFT-1005
+IFT1005 - Développement et Design Web
+Session A-2017
+
+Auteur: 
+        - Benoit Paul (SVG, Formulaire, Analyse)
+        - Olivier Provost (Accueil, Menu, Design, Auteurs, header, footer)
 
 
-Source Image Bar : https://www.pexels.com/search/bar/
+
+Lien : 
+        - WebDepot : https://www.webdepot.umontreal.ca/Usagers/p1173634/MonDepotPublic/IFT1005/2eBoisson/index.xhtml
+        - GitHub   : https://github.com/prooli22/Projet2
+        - Source Image : https://www.pexels.com/search/bar/
+
+Merci et aux plaisirs de faire affaire avec vous pour un futur site Web.
