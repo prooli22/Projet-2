@@ -133,6 +133,12 @@ table td:not(:first-child), table th:not(:first-child){
     width:70%;
 }
 
+.competition{
+    height: 10rem;
+    object-fit: cover;
+    background-color: black;
+}
+
 .couleur{
     margin: 10px 5px;
     height: 55px;
