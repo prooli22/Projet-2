@@ -2,7 +2,7 @@
 IFT1005 - Développement et Design Web
 Session A-2017
 
-## Auteur:
+## Auteur :
 - Benoit Paul (SVG (logo), Réservation, Analyse)
 - Olivier Provost (Accueil, Menu, Design, Auteurs, header, footer)
 
